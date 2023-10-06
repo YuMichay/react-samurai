@@ -1,0 +1,40 @@
+.posts {
+    padding: 1rem;
+    font-size: 0.75rem;
+}
+
+.title {
+    font-size: clamp(1em, 2.5vw, 1.25em);
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+
+.new {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-left: auto;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 5rem;
+    height: 1.5rem;
+    font-family: 'Work Sans';
+    border: none;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.75rem;
+}
+
+button:hover {
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem #dee9ff;
+    font-weight: 700;
+}
+
+@media (max-width: 525px) {
+    button {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #dee9ff;
+}
+
+ul {
+    padding-left: clamp(1rem, 3vw, 2rem);
+}
+
+ul li {
+    list-style: none;
+    font-size: clamp(0.7em, 2vw, 1.25em);
+    cursor: pointer;
+    padding: 1rem 0;
+}
+
+.activeLink {
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.3rem #0055ff;
+}
+
+.item {
+    color: black;
+}
+
+.item:hover {
+    text-shadow: 0.1rem 0.1rem 0.3rem #0055ff;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Work Sans';
+    color: black;
+    font-weight: 700;
+}

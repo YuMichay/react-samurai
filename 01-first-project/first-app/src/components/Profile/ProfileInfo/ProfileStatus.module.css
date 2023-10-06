@@ -1,0 +1,15 @@
+.status {
+  padding: 0;
+}
+
+.status input {
+  border: none;
+  background: #ffffff;
+  opacity: 0.7;
+}
+
+.status input:hover {
+  border: none;
+  background: #ffffff;
+  opacity: 1;
+}

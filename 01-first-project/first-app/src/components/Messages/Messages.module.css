@@ -1,0 +1,36 @@
+.messages {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    font-size: clamp(0.7em, 2vw, 1em);
+}
+
+.messages__items {
+    padding: 1rem;
+}
+
+.messages__windows {
+    background-color: #f7faff;
+    padding: 1rem 2rem;
+    margin: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.new {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+@media (max-width: 525px) {
+
+    .messages__items {
+        padding: 0.313rem;
+    }
+
+    .messages__windows {
+        padding: 0.313rem 0.625rem;
+    }
+}

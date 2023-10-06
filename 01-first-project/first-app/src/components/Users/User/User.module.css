@@ -1,0 +1,35 @@
+.userIcon {
+    display: grid;
+    grid-template-areas: "photo info"
+    "button info";
+    grid-template-columns: 7rem 4rem;
+}
+
+.photo img {
+    grid-area: "photo";
+    width: clamp(5rem, 10vw, 6rem);
+    height: clamp(5rem, 10vw, 6rem);
+    border-radius: 50%;
+}
+
+.userInfo {
+    grid-area: "info";
+    display: flex;
+    flex-direction: column;
+}
+
+.userIcon > button {
+    grid-area: "button";
+}
+
+@media (max-width: 768px) {
+    .userIcon {
+        grid-template-areas: "photo"
+            "info"
+            "button";
+        grid-template-columns: 1fr;
+        grid-template-rows: 4.5rem 3rem 3rem;
+        text-align: center;
+    }
+    
+}

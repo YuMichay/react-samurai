@@ -1,0 +1,46 @@
+.header {
+    grid-area: header;
+    background-color: #dee9ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.img {
+    width: clamp(2rem, 5vw, 3.125rem);
+    height: clamp(2rem, 5vw, 3.125rem);
+    margin-left: clamp(1rem, 3vw, 2rem);
+    background-image: url("../../logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-size: clamp(0.7em, 3vw, 1.5em);
+    padding-left: 1rem;
+    font-weight: 700;
+}
+
+.login {
+    font-size: clamp(0.7em, 2vw, 1.15em);
+}
+
+.login div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 1em;
+}
+
+.login button {
+    margin: 0 2rem 0 0.313rem;
+    padding: 0.0625rem;
+    font-size: clamp(0.7em, 2vw, 1em);
+}

@@ -1,0 +1,13 @@
+.item {
+    padding: 1rem;
+    font-size: 1.25em;
+}
+
+.item:hover {
+    text-shadow: 0.1rem 0.1rem 0.3rem #0055ff; 
+}
+
+.item.active {
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.3rem #0055ff;
+}

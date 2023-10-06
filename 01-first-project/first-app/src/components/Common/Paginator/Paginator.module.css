@@ -1,0 +1,29 @@
+.selected {
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.3rem #0055ff;
+}
+
+.pages {
+    padding: 1rem 0;
+    font-size: clamp(0.7em, 2vw, 1em);
+    font-weight: 700;
+    text-align: center;
+}
+
+.pages span {
+    cursor: pointer;
+    padding: 0.625rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.pages span:hover {
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.3rem #0055ff;
+}
+
+@media (max-width: 525px) {
+    .pages {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

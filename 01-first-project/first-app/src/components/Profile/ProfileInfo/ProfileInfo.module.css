@@ -1,0 +1,122 @@
+.content__background img {
+    width: 100%;
+    height: 20vh;
+}
+  
+.content__background {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    background-color: #e9f0fe;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.user {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    overflow: hidden;
+}
+  
+.user img {
+    width: 100%;
+    height: auto;
+}
+
+.user__container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.description {
+    padding: 0.625rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    font-size: clamp(0.8em, 1vw, 1em);
+}
+
+.description div {
+    padding: 0.313rem 0;
+}
+
+.title {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.input_file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.input_file::before {
+    width: 100%;
+    cursor: pointer;
+    content: 'Select photo';
+    display: inline-block;
+    font-family: 'Work Sans';
+    border: none;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    padding: 0.313rem 0;
+    text-align: center;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+}
+
+.input_file:hover::before {
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem #dee9ff;
+    font-weight: 700;
+}
+
+.input_file:active::before {
+    background: #dee9ff;
+}
+
+.job div {
+    padding-bottom: 0.313rem;
+}
+
+.contacts {
+    padding: 0.313rem 0;
+    margin-left: 1rem;
+}
+
+.edit {
+    margin-left: 0;
+}
+
+.checkbox__edit {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.625rem;
+}
+
+.checkbox__edit div {
+    display: inline;
+    vertical-align: middle;
+}
+
+input,
+textarea {
+    border: none;
+}
+
+@media (max-width: 525px) {
+    .user__container {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0.625rem;
+    }
+
+    .description {
+        padding: 0.313rem;
+    }
+}
